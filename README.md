@@ -1,13 +1,14 @@
 # NetGuard
 **Monitor Packets. Debug Smarter.**
 
-NetGuard is a lightweight, Dockerized network traffic monitoring tool built with Python and [Scapy](https://scapy.readthedocs.io/). It allows you to inspect live packets from your host machine for debugging, research, or security analysis. Designed for developers, security enthusiasts, and network engineers, NetGuard runs directly inside a container — no local Python setup required.
+NetGuard is a lightweight, Dockerized network traffic monitoring tool built with Python and Scapy. It allows you to inspect live packets from your host machine for debugging, research, or security analysis. Designed for developers, security enthusiasts, and network engineers, NetGuard runs directly inside a container — no local Python setup required. While Docker ensures cross-platform compatibility, 🐧 NetGuard is best experienced on Linux, where it takes full advantage of native raw socket support and host networking. Features like --net=host and privileged access work seamlessly on Linux, enabling accurate, low-level packet capture.
 
 ---
 ##Tech Stack
 - **Python – Core language used for packet sniffing and processing
 - **Scapy – Python library for low-level network packet manipulation
 - **Docker – Containerization for a clean and portable runtime environment
+- **Linux – Recommended host OS for full packet capture support
 - **Flask (Planned) – For the upcoming real-time web dashboard
 
 ## ✨ Features
